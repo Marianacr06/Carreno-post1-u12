@@ -14,24 +14,25 @@ Integrar Factory, Strategy, Observer y Facade en un sistema de pedidos, verifica
 - Observer: `PedidoProcesadoEvent` y listeners de notificacion.
 - Facade: `FachadaPedidos` expone un flujo simple para el controlador.
 
-## Ejecucion
-```bash
-mvn clean verify
-mvn clean verify sonar:sonar -Dsonar.projectKey=pedidos-integrado -Dsonar.host.url=http://localhost:9000 -Dsonar.login=TU_TOKEN
-```
+---
 
-## Pruebas
-- Unitarias: Strategy, Factory, Observer, Facade.
-- Integracion: flujo completo con evento publicado.
+## Tabla Comparativa de Métricas SonarCloud
 
-## Tabla comparativa (completar)
-| Metrica | Antes | Despues |
-| --- | --- | --- |
-| Cyclomatic Complexity | | |
-| Cognitive Complexity | | |
-| Coverage | | |
+| Métrica | ANTES | DESPUÉS | Mejora |
+|---|---|---|---|
+| Maintainability issues | 6 | 1 | ✅ -83% |
+| Reliability issues | 0 | 0 | ✅ Sin cambio |
+| Security issues | 0 | 0 | ✅ Sin cambio |
+| Quality Gate | Passed | Passed | ✅ |
 
-## Evidencias
-- img/sonarqube-antes.png
-- img/sonarqube-despues.png
-- img/quality-gate.png
+---
+
+## Evidencias SonarCloud
+
+### Dashboard ANTES
+![Dashboard Antes](img/ANTES.png)
+
+### Dashboard DESPUÉS
+![Dashboard Después](img/DESPUES.png)
+
+---
