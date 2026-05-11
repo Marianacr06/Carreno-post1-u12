@@ -1,26 +1,22 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
     <version>3.2.5</version>
     <relativePath/>
   </parent>
-
   <groupId>com.empresa</groupId>
   <artifactId>pedidos-integrado-u12-post1</artifactId>
   <version>1.0.0</version>
   <name>pedidos-integrado-u12-post1</name>
-
   <properties>
     <java.version>17</java.version>
-<sonar.projectKey>Marianacr06_Carreno-post1-u12</sonar.projectKey>
-<sonar.organization>marianacr06</sonar.organization>
-
+    <sonar.projectKey>Marianacr06_Carreno-post1-u12</sonar.projectKey>
+    <sonar.organization>marianacr06</sonar.organization>
+    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
   </properties>
-
   <dependencies>
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -51,25 +47,17 @@
       <version>5.14.2</version>
       <scope>test</scope>
     </dependency>
-    <dependency>
-      <groupId>net.bytebuddy</groupId>
-      <artifactId>byte-buddy</artifactId>
-      <version>1.15.10</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>net.bytebuddy</groupId>
-      <artifactId>byte-buddy-agent</artifactId>
-      <version>1.15.10</version>
-      <scope>test</scope>
-    </dependency>
   </dependencies>
-
   <build>
     <plugins>
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.sonarsource.scanner.maven</groupId>
+        <artifactId>sonar-maven-plugin</artifactId>
+        <version>3.11.0.3922</version>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
